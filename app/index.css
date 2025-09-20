@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;700&display=swap');
+
+@layer base {
+  /* Ensure inputs always have a white background */
+  input {
+    /* background-color: white !important; */
+
+    opacity: 1 !important; /* Prevents greyed-out look */
+  }
+
+  /* Disabled inputs should still look white */
+  input:disabled {
+    background-color: white !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: black !important;
+  }
+
+  /* Autofill Fix */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    /* background-color: white !important; */
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: black !important;
+    transition: background-color 9999s ease-in-out 0s !important;
+  }
+
+  /* General Styling */
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    @apply overflow-x-hidden text-base;
+  }
+  body {
+    @apply font-josefin text-white bg-primary-1200 mx-auto min-w-[350px] md:mx-auto;
+  }
+  p {
+    @apply leading-6;
+  }
+
+  /* Font Sizes */
+  .font-76 {
+    @apply text-76 font-semibold;
+  }
+  .font-46 {
+    @apply text-46;
+  }
+  .font-36 {
+    @apply text-36;
+  }
+  .font-26 {
+    @apply text-26;
+  }
+  .font-22 {
+    @apply text-22;
+  }
+  .font-20 {
+    @apply text-20;
+  }
+  .font-18 {
+    @apply text-18;
+  }
+  .font-16 {
+    @apply text-16;
+  }
+}
+
+@layer components {
+  .form-input {
+    @apply bg-primary-600 h-[60px] text-primary-900 px-[30px] py-[24px] rounded-20 right-0 outline-0 focus:outline-0 ring-0 focus:ring-0;
+  }
+  .ax-center {
+    @apply absolute left-1/2 -translate-x-1/2;
+  }
+  .ay-center {
+    @apply absolute top-1/2 -translate-y-1/2;
+  }
+  .a-center {
+    @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .btn {
+    @apply text-22 text-white  font-medium py-3 px-8 min-w-[100px] h-[60px] gap-4 flex-center;
+  }
+  .btn-primary {
+    @apply bg-primary-400;
+  }
+  .btn-secondary {
+    @apply bg-primary-300;
+  }
+  .btn-outline-white {
+    @apply border border-white;
+  }
+}
+
+@layer utilities {
+}
+
+.react {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  margin-top: -125px;
+  margin-left: -125px;
+  cursor: 'pointer';
+}
+
+#notif {
+  visibility: hidden;
+  position: fixed;
+  color: white;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  transform: translate(-15px, 15px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.swiper-button-next:after {
+  font-size: 24px;
+  color: white;
+  margin-right: 8px;
+}
+.swiper-button-prev:after {
+  font-size: 24px;
+  color: white;
+  margin-left: 8px;
+}
+
+.notif-text-icon {
+  align-items: stretch;
+  box-shadow: 0 1px 1px rgb(10 10 10 / 10%);
+  display: flex;
+  max-width: 250px;
+}
+
+.notif-message {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  font-weight: 700;
+  padding: 15px 25px;
+}
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+}
+.to-date .react-datepicker-popper {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: translate(-75.3333px, 52px) !important;
+  will-change: transform;
+}
+#notif.show {
+  visibility: visible;
+  animation: show 0.5s forwards;
+}
+.profile-bg {
+  /* background-image: url('./images/profilebg.png'); */
+  background-size: cover;
+  background-position: center;
+}
+@keyframes show {
+  0% {
+    transform: translate(-15px, 15px) scale(0);
+  }
+
+  50% {
+    transform: translate(-15px, 15px) scale(1.2);
+  }
+
+  70% {
+    transform: translate(-15px, 15px) scale(0.9);
+  }
+
+  100% {
+    transform: translate(-15px, 15px) scale(1);
+  }
+}
+
+.shapes {
+  width: 44.8px;
+  height: 44.8px;
+  color: #f2c100;
+  background: conic-gradient(
+      from -45deg at top 22.4px left 50%,
+      #0000,
+      currentColor 1deg 90deg,
+      #0000 91deg
+    ),
+    conic-gradient(
+      from 45deg at right 22.4px top 50%,
+      #0000,
+      currentColor 1deg 90deg,
+      #0000 91deg
+    ),
+    conic-gradient(
+      from 135deg at bottom 22.4px left 50%,
+      #0000,
+      currentColor 1deg 90deg,
+      #0000 91deg
+    ),
+    conic-gradient(
+      from -135deg at left 22.4px top 50%,
+      #0000,
+      currentColor 1deg 90deg,
+      #0000 91deg
+    );
+  animation: shapes-q299i1md 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+}
+.css-gq1um1-MuiPaper-root-MuiDrawer-paper {
+  background-color: transparent !important;
+}
+.css-tltd71 {
+  background-color: transparent !important;
+}
+@keyframes shapes-q299i1md {
+  50% {
+    width: 67.19999999999999px;
+    height: 67.19999999999999px;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.react-loading-skeleton {
+  --base-color: #9f9c9c;
+  --highlight-color: #f5f5f5;
+  --animation-duration: 1.5s;
+  --animation-direction: normal;
+  --pseudo-element-display: block;
+  background-color: #ebebeb;
+  background-color: var(--base-color);
+  width: 100%;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  line-height: 1;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.react-datepicker__close-icon {
+  display: none;
+}
+
+.Toastify__toast-icon {
+  display: none;
+}
+
+.zsiq-flexM .zsiq-iflexM .zsiq-float {
+  position: absolute !important;
+  bottom: 8rem !important;
+}
+#zsiq_float {
+  position: absolute !important;
+  bottom: 8rem !important;
+}

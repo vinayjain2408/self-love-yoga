@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- manifest -->
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#222222" />
+    <meta name="theme-color" content="#222222" />
+
+    <!-- favicon -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="mask-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- <link rel="stylesheet" href="/css/example.css"> -->
+
+    <title>Color Game</title>
+  </head>
+
+  <body>
+    <noscript>
+      If you're seeing this message, that means
+      <strong>JavaScript has been disabled on your browser</strong>, please
+      <strong>enable JS</strong> to make this app work.
+    </noscript>
+
+    <div id="app"></div>
+
+    <!-- Import your scripts globally -->
+    <!-- <script type="text/javascript" src="/js/example.js"></script> -->
+
+    <script>
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
+    </script>
+    <script
+      id="zsiqscript"
+      src="https://salesiq.zoho.in/widget?wc=siq9f36e8855ed1b6d941efb39f1ee3f9c7b02bf5fb27b2658d3f72cc1b70d0299f83b03f309309a3c754883a8b8b4927e5"
+      defer
+    ></script>
+
+    <!-- <script type="text/javascript">
+      $zoho.salesiq.ready = function (embedinfo) {
+        $zoho.salesiq.floatbutton.visible('hide');
+        if (
+          window.location.href !==
+            'https://mst-igaming.codesfortomorrow.com/signup' ||
+          window.location.href !==
+            'https://mst-igaming.codesfortomorrow.com/login' ||
+          window.location.href !==
+            'https://mst-igaming.codesfortomorrow.com/win-go'
+        ) {
+          $zoho.salesiq.floatbutton.visible('show');
+          $zoho.salesiq.tracking.on();
+        }
+      };
+    </script> -->
+  </body>
+</html>
