@@ -1,13 +1,10 @@
-// import CustomButton from '@/components/CustomButton';
 import HomeSlider from '@/components/Slider/HomeSlider';
 import { getReq } from '@/utils/apiHandlers';
-import { text } from '@/utils/constant';
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useDemoLogin from '@/hooks/useDemoLogin';
 import { Loading } from '@/components';
 import LocalContext from '../../contexts/LocaleContext';
-import { useTranslation } from 'react-i18next';
 import Card from '@/components/Card';
 import AboutUsDetail from '@/components/AboutUsDetail/Page';
 import Testimonials from '@/components/Testimonials/page';
@@ -16,40 +13,39 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 
 const cardsData = [
   {
-    image: '/images/yoga1.jpg',
+    image: '/images/card1.jpeg',
     title: 'Morning Yoga Routine',
     description: 'Start your day with a fresh yoga flow to energize your body.',
   },
   {
-    image: '/images/yoga2.jpg',
+    image: '/images/card2.jpeg',
     title: 'Power Yoga',
     description: 'Boost your stamina and strength with power yoga sessions.',
   },
   {
-    image: '/images/yoga3.jpg',
+    image: '/images/card7.jpeg',
     title: 'Meditation Basics',
     description:
       'Learn how to calm your mind with simple meditation techniques.',
   },
   {
-    image: '/images/yoga4.jpg',
+    image: '/images/card4.jpeg',
     title: 'Healthy Diet',
     description: 'Combine yoga with the right diet for better results.',
   },
   {
-    image: '/images/yoga5.jpg',
-    title: 'Yoga for Back Pain',
+    image: '/images/card3.jpeg',
+    title: 'Corporate Yoga',
     description: 'Relieve stress and back pain with targeted yoga poses.',
   },
   {
-    image: '/images/yoga6.jpg',
+    image: '/images/card6.jpeg',
     title: 'Evening Relaxation',
     description: 'End your day with gentle stretches and relaxation yoga.',
   },
 ];
 
 const Home = () => {
-  const { t } = useTranslation();
   const navigate = useNavigate();
   const { LOCALE } = useContext(LocalContext);
   const [banner, setBanner] = useState([]);
@@ -83,6 +79,7 @@ const Home = () => {
   return (
     <>
       <div className="pb-10">
+        {/* Header */}
         <nav className="bg-[#011030] fixed -top-1 left-0 right-0 z-50  mx-auto">
           <div className="shadow-custom flex  items-center justify-between p-4">
             <div className="w-[140px] ">
@@ -99,19 +96,19 @@ const Home = () => {
             <div className="flex items-center gap-2 pl-4 py-2">
               <button
                 onClick={handleDemoLogin}
-                className="rounded-lg py-1.5 px-3 text-16 border font-poppins font-semibold leading-5 border-yellow-300 transition "
+                className="rounded-lg py-1.5 px-3 text-12 md:text-16 border font-poppins font-semibold leading-5 border-yellow-300 transition "
               >
                 Home
               </button>
 
               <button
-                className="rounded-lg font-poppins font-semibold leading-5 py-1.5 px-3 text-16 bg-custom-gradient text-black transition "
+                className="rounded-lg font-poppins font-semibold leading-5 py-1.5 px-3 text-12 md:text-16 bg-custom-gradient text-black transition "
                 onClick={() => navigate(LOCALE + '/aboutus')}
               >
                 About Us
               </button>
               <button
-                className="rounded-lg font-poppins font-semibold leading-5 py-1.5 px-3 text-16 bg-custom-gradient text-black transition "
+                className="rounded-lg font-poppins font-semibold leading-5 py-1.5 px-3 text-12 md:text-16 bg-custom-gradient text-black transition "
                 onClick={() => navigate(LOCALE + '/contact')}
               >
                 Contact Us
@@ -119,6 +116,7 @@ const Home = () => {
             </div>
           </div>
         </nav>
+
         {/* Hero Section  */}
         <section className="bg-[#f5f7ff] py-16 px-6 md:px-12 mt-16">
           <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -186,10 +184,12 @@ const Home = () => {
             </div>
           </div>
         </section>
+
+        {/* Yoga vaas */}
         <section className="pt-8 px-[12px]">
           <div className="rounded-lg text-scroll bg-custom-gradient mt-3">
             {/* {reactIcons.apple} */}
-            {text && (
+            {/* {text && (
               <div className="rounded-lg">
                 <div className="rounded-10 gradient-bg">
                   <marquee className="text-14 font-poppins  text-center font-semibold leading-[18px] text-black">
@@ -203,8 +203,9 @@ const Home = () => {
                   </marquee>
                 </div>
               </div>
-            )}
+            )} */}
           </div>
+          <h1 className="text-center text-3xl my-6">Yoga vaas</h1>
           <div className="relative">
             <HomeSlider banner={banner} />
           </div>

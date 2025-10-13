@@ -25,6 +25,7 @@
     "@mui/icons-material": "^6.4.1",
     "@mui/material": "^6.4.1",
     "@reduxjs/toolkit": "^1.9.5",
+    "@virtualidentity/aos": "^1.0.0",
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.9",
     "clsx": "^2.1.1",

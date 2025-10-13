@@ -5,11 +5,8 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import {
   AboutUs,
   Home,
-  Login,
   NotFound,
   Notification,
-  Profile,
-  Signup,
 } from './containers/pageListAsync';
 import { Toaster } from 'react-hot-toast';
 import OfflineMessage from './containers/OfflineMessage';
@@ -18,7 +15,6 @@ import { isLoggedIn } from './utils/apiHandlers';
 import Cookies from 'js-cookie';
 import LocaleContext from './contexts/LocaleContext';
 import { Bounce, ToastContainer } from 'react-toastify';
-import PrivateRoute from './containers/auth/PrivateRoute';
 import ScrollToTop from './helpers/ScrollToTop';
 import { onMessageListener } from './firebase';
 import Notifications from './components/Notifications';
@@ -89,20 +85,10 @@ function App() {
           <Route path={`/${LOCALE}`} element={<MainLayout />}>
             {/* Example route: "/en" */}
             <Route path="" element={<Home />} />
-            <Route path="login" element={<Login />} />
-            <Route path="signup" element={<Signup />} />
             <Route path="aboutus" element={<AboutUs />} />
 
             {/* Nested Routes under locale */}
             <Route path="notification" element={<Notification />} />
-            <Route
-              path="profile"
-              element={
-                <PrivateRoute>
-                  <Profile />
-                </PrivateRoute>
-              }
-            />
             <Route path="about-us" element={<AboutUs />} />
             {/* Catch-all for invalid routes under locale */}
             <Route path="*" element={<NotFound />} />
