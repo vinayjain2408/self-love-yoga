@@ -19,3 +19,15 @@ export const Footer = loadable(() => import('./Footer'), {
 export const Navbar = loadable(() => import('./Navbar'), {
   fallback: <Loading />,
 });
+export const Hero = loadable(() => import('./Hero'), {
+  fallback: <Loading />,
+});
+export const Stats = loadable(() => import('./Stats'), {
+  fallback: <Loading />,
+});
+export const CryptoPortfolio = loadable(() => import('./CryptoPortfolio'), {
+  fallback: <Loading />,
+});
+export const WhyGlobalCrypto = loadable(() => import('./WhyGlobalCrypto'), {
+  fallback: <Loading />,
+});
