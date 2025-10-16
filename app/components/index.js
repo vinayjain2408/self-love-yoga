@@ -31,3 +31,6 @@ export const CryptoPortfolio = loadable(() => import('./CryptoPortfolio'), {
 export const WhyGlobalCrypto = loadable(() => import('./WhyGlobalCrypto'), {
   fallback: <Loading />,
 });
+export const FaqSection = loadable(() => import('./FaqSection'), {
+  fallback: <Loading />,
+});

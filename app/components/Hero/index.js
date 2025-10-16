@@ -14,7 +14,7 @@ export default function Hero() {
           platform.*
         </p>
         <button className="bg-white text-[#008e64] px-6 py-2 rounded-xl font-semibold hover:bg-yellow-300">
-          Get Started
+          Invest Now
         </button>
         <p className="text-sm text-gray-200 !mt-14">
           *Based on the January 2025 Forbes Advisor review of crypto platforms.

@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="flex justify-between items-center py-4 px-8 bg-[#008e64] text-white">
       {/* <div className="text-xl font-bold">GLOBAL CRYPTO</div> */}
       <img src="/images/logocrypto.png" alt="logo" />
-      <ul className="flex space-x-6 border rounded-3xl p-2.5">
+      <ul className="flex justify-center items-center space-x-6 border rounded-3xl p-2">
         <li className="hover:text-[#006b4f] text-[#008e64] cursor-pointer rounded-full bg-white px-4 py-1 ">
           Invest
         </li>

@@ -26,6 +26,7 @@ module.exports = {
         custom: '0px 4px 4px rgba(223, 177, 30, 0.19)',
       },
       fontFamily: {
+        ibm: ['IBM Plex Sans', 'sans-serif'],
         josefin: ['Josefin', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         abeezee: ['ABeeZee', 'sans-serif'],

@@ -1,5 +1,7 @@
 import {
   CryptoPortfolio,
+  FaqSection,
+  Footer,
   Hero,
   Navbar,
   Stats,
@@ -15,6 +17,8 @@ function index() {
       <Stats />
       <CryptoPortfolio />
       <WhyGlobalCrypto />
+      <FaqSection />
+      <Footer />
     </div>
   );
 }
