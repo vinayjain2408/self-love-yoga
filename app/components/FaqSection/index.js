@@ -42,13 +42,13 @@ export default function FaqSection() {
   };
 
   return (
-    <div className="min-h-screen bg-[#006b4f] flex flex-col justify-center items-center px-4 py-10 text-white">
+    <div className="min-h-screen bg-[#FFFFFF] flex flex-col justify-center items-center px-4 py-10 text-[#4965D2]">
       <div className="max-w-2xl w-full">
         {/* Header */}
         <h2 className="text-3xl md:text-3xl font-semibold text-center mb-2">
           Frequently asked questions
         </h2>
-        <p className="text-center text-20 text-gray-200 mb-8">
+        <p className="text-center text-20 text-[#4965D2] mb-8">
           Everything you need to know about the product and billing.
         </p>
 
@@ -68,7 +68,7 @@ export default function FaqSection() {
                 )}
               </button>
               {openIndex === index && faq.answer && (
-                <p className="text-gray-200 text-sm leading-relaxed pl-1">
+                <p className="text-[#4965D2] text-sm leading-relaxed pl-1">
                   {faq.answer}
                 </p>
               )}
@@ -77,7 +77,7 @@ export default function FaqSection() {
         </div>
 
         {/* Bottom Section */}
-        <div className="text-center mt-10">
+        <div className="text-[#FFFFFF] text-center mt-10 rounded-xl px-8 py-5 border border-[#4965D2] border bg-[#4965D2] ">
           <div className="flex justify-center mb-3">
             <img
               src="https://randomuser.me/api/portraits/men/32.jpg"
@@ -96,13 +96,13 @@ export default function FaqSection() {
             />
           </div>
 
-          <h3 className="font-semibold text-lg">Still have questions?</h3>
-          <p className="text-gray-200 text-sm mb-5">
+          <h3 className=" font-semibold text-lg">Still have questions?</h3>
+          <p className="text-[#FFFFFF] text-sm mb-5">
             Can’t find the answer you’re looking for? Please chat to our
             friendly team.
           </p>
 
-          <button className="bg-[#00b377] hover:bg-[#00cc88] transition-all px-6 py-2 rounded-full text-white font-medium">
+          <button className="bg-[#FFFFFF] transition-all px-5 py-2 rounded-xl text-[#4965D2] font-medium">
             Get in touch
           </button>
         </div>

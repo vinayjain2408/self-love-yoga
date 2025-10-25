@@ -28,9 +28,30 @@ export const Stats = loadable(() => import('./Stats'), {
 export const CryptoPortfolio = loadable(() => import('./CryptoPortfolio'), {
   fallback: <Loading />,
 });
-export const WhyGlobalCrypto = loadable(() => import('./WhyGlobalCrypto'), {
-  fallback: <Loading />,
-});
 export const FaqSection = loadable(() => import('./FaqSection'), {
   fallback: <Loading />,
 });
+export const CryptoInvestmentSection = loadable(
+  () => import('./CryptoInvestmentSection'),
+  {
+    fallback: <Loading />,
+  },
+);
+export const BitcoinLandingSection = loadable(
+  () => import('./BitcoinLandingSection'),
+  {
+    fallback: <Loading />,
+  },
+);
+export const CryptoResellerSection = loadable(
+  () => import('./CryptoResellerSection'),
+  {
+    fallback: <Loading />,
+  },
+);
+export const CryptoPurchasePage = loadable(
+  () => import('./CryptoPurchasePage'),
+  {
+    fallback: <Loading />,
+  },
+);

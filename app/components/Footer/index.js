@@ -11,7 +11,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-[#006b4f] border-t border-gray-200">
+    <footer className="bg-white text-[#4965D2] border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* LEFT SIDE */}
         <div>
@@ -19,14 +19,14 @@ export default function Footer() {
             Take your crypto <br /> trading to the next level.
           </h3>
           <h2 className="text-lg font-bold mb-6">
-            GLOBAL <span className="text-[#006b4f]">CRYPTO</span>
+            GLOBAL <span className="text-[#4965D2]">CRYPTO</span>
           </h2>
 
           <div className="flex space-x-3">
-            <button className="bg-[#008e64] hover:bg-[#00a879] transition-all text-white px-5 py-2 rounded-md font-medium">
+            <button className="bg-[#4965D2] transition-all text-white px-5 py-2 rounded-md font-medium">
               Create account
             </button>
-            <button className="border border-[#008e64] text-[#008e64] px-5 py-2 rounded-md font-medium hover:bg-[#008e64] hover:text-white transition-all">
+            <button className="border border-[#4965D229] text-[#4965D2] px-12 py-2 rounded-md font-medium bg-[#4965D229] transition-all">
               Sign in
             </button>
           </div>
@@ -38,8 +38,8 @@ export default function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {/* Features */}
             <div>
-              <h4 className="font-semibold mb-3">Features</h4>
-              <ul className="space-y-1 text-sm">
+              <h4 className="font-semibold  mb-3">Features</h4>
+              <ul className="space-y-1 text-sm text-[#000B1DCC]">
                 <li>Margin Trading</li>
                 <li>Futures Trading</li>
                 <li>OTC Trading</li>
@@ -52,7 +52,7 @@ export default function Footer() {
             {/* Company */}
             <div>
               <h4 className="font-semibold mb-3">Company</h4>
-              <ul className="space-y-1 text-sm">
+              <ul className="space-y-1 text-smn text-[#000B1DCC]">
                 <li>About Us</li>
                 <li>Careers</li>
                 <li>Blog</li>
@@ -65,7 +65,7 @@ export default function Footer() {
             {/* Browse Prices */}
             <div>
               <h4 className="font-semibold mb-3">Browse Prices</h4>
-              <ul className="space-y-1 text-sm">
+              <ul className="space-y-1 text-sm text-[#000B1DCC]">
                 <li>Bitcoin Price</li>
                 <li>Ethereum Price</li>
                 <li>Dogecoin Price</li>
@@ -80,7 +80,7 @@ export default function Footer() {
             {/* Popular Markets */}
             <div>
               <h4 className="font-semibold mb-3">Popular Markets</h4>
-              <ul className="space-y-1 text-sm">
+              <ul className="space-y-1 text-sm text-[#000B1DCC]">
                 <li>BTC to USD</li>
                 <li>ETH to USD</li>
                 <li>DOGE to USD</li>
@@ -92,7 +92,7 @@ export default function Footer() {
             {/* Buying Guides */}
             <div>
               <h4 className="font-semibold mb-3">Buying Guides</h4>
-              <ul className="space-y-1 text-sm">
+              <ul className="space-y-1 text-sm text-[#000B1DCC]">
                 <li>Buy Bitcoin</li>
                 <li>Buy Ethereum</li>
                 <li>Buy Dogecoin</li>
@@ -104,7 +104,7 @@ export default function Footer() {
             {/* Crypto Education */}
             <div>
               <h4 className="font-semibold mb-3">Crypto Education</h4>
-              <ul className="space-y-1 text-sm">
+              <ul className="space-y-1 text-sm text-[#000B1DCC]">
                 <li>What is cryptocurrency?</li>
                 <li>What is Bitcoin?</li>
                 <li>Best Exchanges</li>
@@ -117,7 +117,7 @@ export default function Footer() {
           {/* Bottom Row - 1 Column */}
           <div>
             <h4 className="font-semibold mb-3">Wallet</h4>
-            <ul className="space-y-1 text-sm">
+            <ul className="space-y-1 text-sm text-[#000B1DCC]">
               <li>Crypto Wallet</li>
               <li>Bitcoin Wallet</li>
               <li>Ethereum Wallet</li>
@@ -132,7 +132,7 @@ export default function Footer() {
       <div className="border-t border-gray-200 pt-6 pb-3">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 space-y-4 md:space-y-0">
           {/* Links */}
-          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+          <div className="flex flex-wrap gap-4 justify-center md:justify-start text-[#4965D2]">
             <span>Privacy Notice</span>
             <span>Terms of Service</span>
             <span>Cookie Settings</span>
@@ -141,7 +141,7 @@ export default function Footer() {
           </div>
 
           {/* Social Icons */}
-          <div className="flex space-x-4 text-[#008e64]">
+          <div className="flex space-x-4 text-[#4965D2]">
             <Instagram className="w-5 h-5 hover:text-[#00a879] cursor-pointer" />
             <Facebook className="w-5 h-5 hover:text-[#00a879] cursor-pointer" />
             <Linkedin className="w-5 h-5 hover:text-[#00a879] cursor-pointer" />
@@ -153,7 +153,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="text-center text-xs text-gray-500 py-4">
+      <div className="text-center text-xs py-4 text-[#4965D2]">
         © 2025 Global Crypto
       </div>
     </footer>

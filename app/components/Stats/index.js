@@ -24,28 +24,28 @@ export default function Stats() {
   }, []);
 
   return (
-    <section className="bg-white py-10 text-center">
-      <p className="text-[16px] text-[#08844F] mb-8 font-medium">
+    <section className="bg-[#4965D2] py-10 text-center">
+      <p className="text-[16px] text-[#FFFFFF] mb-8 font-medium">
         Accelerating the global adoption of crypto since{' '}
-        <span className="text-[#08844F] font-semibold">2022</span>
+        <span className="text-[#FFFFFF] font-semibold">2022</span>
       </p>
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
         <div>
-          <h2 className="text-4xl font-medium text-[#08844F]">
+          <h2 className="text-4xl font-medium text-[#FFFFFF]">
             {clients.toLocaleString()}+
           </h2>
-          <p className="text-[#08844F]">Clients</p>
+          <p className="text-[#FFFFFF]">Clients</p>
         </div>
         <div>
-          <h2 className="text-4xl font-medium text-[#08844F]">{countries}+</h2>
-          <p className="text-[#08844F]">Countries supported</p>
+          <h2 className="text-4xl font-medium text-[#FFFFFF]">{countries}+</h2>
+          <p className="text-[#FFFFFF]">Countries supported</p>
         </div>
         <div>
-          <h2 className="text-4xl font-medium text-[#08844F]">
+          <h2 className="text-4xl font-medium text-[#FFFFFF]">
             {volume.toLocaleString()}+
           </h2>
-          <p className="text-[#08844F]">Quarterly trading volume</p>
+          <p className="text-[#FFFFFF]">Quarterly trading volume</p>
         </div>
       </div>
     </section>

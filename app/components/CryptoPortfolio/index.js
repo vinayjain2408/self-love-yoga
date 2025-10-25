@@ -3,32 +3,27 @@ import React, { useState } from 'react';
 const categories = ['Popular', 'Rewards', 'Stablecoins', 'Newly listed'];
 
 const cryptos = [
-  { name: 'Polkadot', symbol: 'DOT', price: '$3.27', change: '+5.37%' },
+  { name: 'TRON', symbol: 'TRX', price: '$0.32', change: '+1.56%' },
   { name: 'Dogecoin', symbol: 'DOGE', price: '$0.21', change: '+8.98%' },
   { name: 'XRP', symbol: 'XRP', price: '$2.58', change: '+6.88%' },
-  { name: 'Uniswap', symbol: 'UNI', price: '$6.68', change: '+9.22%' },
-  { name: 'Shiba Inu', symbol: 'SHIB', price: '$0.0011', change: '+7.45%' },
+  { name: 'Ethereum', symbol: 'ETH', price: '$4,103.19', change: '' },
   { name: 'Bitcoin', symbol: 'BTC', price: '$139.00', change: '+4.25%' },
-  { name: 'TRON', symbol: 'TRX', price: '$0.32', change: '+1.56%' },
+  { name: 'Shiba Inu', symbol: 'SHIB', price: '$0.0011', change: '+7.45%' },
   { name: 'Stellar', symbol: 'XLM', price: '$0.34', change: '+5.81%' },
-  { name: 'Chainlink', symbol: 'LINK', price: '$19.34', change: '+10.15%' },
+  { name: 'Axie Infinity', symbol: 'AXS', price: '$1.74', change: '+9.31%' },
   { name: 'Litecoin', symbol: 'LTC', price: '$96.94', change: '+1.02%' },
   { name: 'Pepe', symbol: 'PEPE', price: '$0.00076', change: '+11.56%' },
   { name: 'Bitcoin Cash', symbol: 'BCH', price: '$540.29', change: '+3.03%' },
-  { name: 'The Graph', symbol: 'GRT', price: '$0.070', change: '+8.21%' },
-  { name: 'Axie Infinity', symbol: 'AXS', price: '$1.74', change: '+9.31%' },
-  { name: 'Kusama', symbol: 'KSM', price: '$11.93', change: '+9.89%' },
-  { name: 'Polygon', symbol: 'MATIC', price: '$0.20', change: '+2.71%' },
-  { name: 'Waves', symbol: 'WAVES', price: '$0.88', change: '+10.23%' },
-  { name: 'Cosmos', symbol: 'ATOM', price: '$13.52', change: '+7.94%' },
+  { name: 'Uniswap', symbol: 'UNI', price: '$6.68', change: '+9.22%' },
+  { name: 'Bitcoin', symbol: '', price: '$114,539.00', change: '' },
 ];
 
 const CryptoPortfolio = () => {
   const [activeCategory, setActiveCategory] = useState('Popular');
 
   return (
-    <div className="min-h-screen bg-green-800 flex flex-col items-center justify-center text-white px-4 py-10">
-      <h1 className="text-3xl font-semibold mb-6 text-center">
+    <div className="min-h-screen bg-[#FFFFFF] flex flex-col items-center text-white px-4 py-10 ">
+      <h1 className="text-4xl text-[#4965d2] font-bold mb-6 text-center ">
         Build your crypto portfolio
       </h1>
 
@@ -40,8 +35,8 @@ const CryptoPortfolio = () => {
             onClick={() => setActiveCategory(cat)}
             className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
               activeCategory === cat
-                ? 'bg-white text-green-800'
-                : 'text-white hover:bg-green-600'
+                ? 'border bg-[#4965D2] font-semibold text-[#FFFFFF] '
+                : 'border bg-[#686B821F] text-[#4965d2] font-semibold'
             }`}
           >
             {cat}
@@ -50,11 +45,11 @@ const CryptoPortfolio = () => {
       </div>
 
       {/* Crypto Cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto mt-10">
+      <div className="grid grid-cols-1 py-1 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-7 gap-2 max-w-6xl mx-auto mt-10">
         {cryptos.map((coin) => (
           <div
             key={coin.symbol}
-            className="rounded-xl px-4 py-2 shadow-md transition-all border border-white flex items-center space-x-3"
+            className="rounded-lg px-1 py-1 shadow-md transition-all border border bg-[#4965D2] flex items-center space-x-3"
           >
             <img
               src="/images/coins1.png"
@@ -77,11 +72,10 @@ const CryptoPortfolio = () => {
           </div>
         ))}
       </div>
-
       {/* Sign Up Button */}
-      <button className="mt-10 bg-green-600 hover:bg-green-500 text-white px-6 py-2 rounded-lg font-medium transition-all">
+      {/* <button className="mt-10 bg-[#4965D2] hover:bg-[#4965D2] text-white px-6 py-2 rounded-lg font-medium transition-all">
         Sign up
-      </button>
+      </button> */}
     </div>
   );
 };

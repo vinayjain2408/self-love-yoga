@@ -1,11 +1,15 @@
 import {
   CryptoPortfolio,
+  CryptoInvestmentSection,
+  BitcoinLandingSection,
+  CryptoPurchasePage,
+  CryptoResellerSection,
   FaqSection,
   Footer,
   Hero,
   Navbar,
   Stats,
-  WhyGlobalCrypto,
+  // WhyGlobalCrypto,
 } from '@/components';
 import React from 'react';
 
@@ -16,9 +20,13 @@ function index() {
       <Hero />
       <Stats />
       <CryptoPortfolio />
-      <WhyGlobalCrypto />
+      <CryptoInvestmentSection />
+      <BitcoinLandingSection />
+      {/* <WhyGlobalCrypto /> */}
       <FaqSection />
       <Footer />
+      <CryptoPurchasePage />
+      <CryptoResellerSection />
     </div>
   );
 }

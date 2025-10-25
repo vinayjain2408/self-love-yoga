@@ -2,23 +2,30 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center py-4 px-8 bg-[#008e64] text-white">
+    <nav className="flex justify-between items-center py-4 px-9 bg-[#FFFFFF] text-white">
       {/* <div className="text-xl font-bold">GLOBAL CRYPTO</div> */}
-      <img src="/images/logocrypto.png" alt="logo" />
-      <ul className="flex justify-center items-center space-x-6 border rounded-3xl p-2">
-        <li className="hover:text-[#006b4f] text-[#008e64] cursor-pointer rounded-full bg-white px-4 py-1 ">
+      <img src="/images/logo.png" alt="logo" />
+      <ul className="border border-[#4965d2] flex justify-center items-center space-x-5 border rounded-3xl p-2">
+        <li className="text-[#4965D2] cursor-rounded-full bg-white px-4 py-1">
           Invest
         </li>
-        <li className="hover:text-[#008e64] cursor-pointer">PMS</li>
-        <li className="hover:text-[#008e64] cursor-pointer">Experts Pick</li>
-        <li className="hover:text-[#008e64] cursor-pointer">Blogs</li>
-        <li className="hover:text-[#008e64] cursor-pointer">About</li>
+        <li className="text-[#4965D2] cursor-pointer">
+          Trading
+          <button className="border border-[#E0D607] text-xs border bg-[#E0D607] text-[#FFFFFF] rounded-full ml-1 px-1 py-0 font-semibold">
+            New
+          </button>
+        </li>
+        <li className="text-[#4965d2] cursor-pointer ">PMS</li>
+        <li className="text-[#4965D2] cursor-pointer ">Experts Pick</li>
+        <li className="text-[#4965d2] cursor-pointer ">Blogs</li>
+        <li className="text-[#4965d2] cursor-pointer ">About</li>
+        <li></li>
       </ul>
       <div className="space-x-4">
-        <button className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-[#006b4f]">
+        <button className="border border-[#4965D2] rounded-full px-6 py-1 text-[#4965D2] font-semibold">
           Log in
         </button>
-        <button className="bg-white text-[#008e64] rounded-full px-4 py-1 font-semibold hover:bg-yellow-300">
+        <button className="border border-[#4965D2] border bg-[#4965D2] text-[#FFFFFF] rounded-full px-6 py-1 font-semibold">
           Sign up
         </button>
       </div>
