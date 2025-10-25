@@ -23,3 +23,14 @@ export const Notification = loadable(() => import('./Notification'), {
 export const AboutUs = loadable(() => import('./AboutUs'), {
   fallback: <Loading />,
 });
+export const Login = loadable(() => import('./Login'), {
+  fallback: <Loading />,
+});
+
+export const Signup = loadable(() => import('./Signup'), {
+  fallback: <Loading />,
+});
+
+export const Invest = loadable(() => import('./Invest'), {
+  fallback: <Loading />,
+});

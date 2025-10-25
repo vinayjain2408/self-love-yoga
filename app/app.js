@@ -5,8 +5,11 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import {
   AboutUs,
   Home,
+  Invest,
+  Login,
   NotFound,
   Notification,
+  Signup,
 } from './containers/pageListAsync';
 import { Toaster } from 'react-hot-toast';
 import MainLayout from './layout';
@@ -51,7 +54,9 @@ function App() {
           <Route path={`/${LOCALE}`} element={<MainLayout />}>
             {/* Example route: "/en" */}
             <Route path="" element={<Home />} />
-            <Route path="aboutus" element={<AboutUs />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
+            <Route path="invest" element={<Invest />} />
 
             {/* Nested Routes under locale */}
             <Route path="notification" element={<Notification />} />

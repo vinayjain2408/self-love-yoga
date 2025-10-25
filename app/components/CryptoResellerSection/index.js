@@ -23,7 +23,7 @@ const CryptoResellerSection = () => {
   // A simple Cube Icon component
   const CubeIcon = () => (
     // The outer wrapper for the icon's background circle/square
-    <div className="mb-20 p-6 rounded-full bg-[#FFFFFF] bg-opacity-100 ">
+    <div className="p-6 rounded-full bg-[#FFFFFF] bg-opacity-100 ">
       {/* The actual cube structure */}
       <div className="w-6 h-6 relative">
         {/* Outer Box */}
@@ -78,12 +78,12 @@ const CryptoResellerSection = () => {
             className="p-8 rounded-lg shadow-xl text-white bg-gradient-to-t from-[#4965D2] to-[#B5C7EB] flex flex-col justify-end min-h-[400px] transition-all duration-300 ease-in-out "
           >
             {/* Icon Area cube */}
-            <div className="mb-8 p-6 rounded-full ml-40 self-start">
+            <div className="mb-4 p-6 rounded-full ml-28 self-start">
               <CubeIcon />
             </div>
 
             {/* Title */}
-            <h2 className=" text-center text-5xl font-bold p-3">
+            <h2 className=" text-center text-4xl font-bold p-3">
               {feature.title}
             </h2>
             <p className="text-center text-[#FFFFFF] text-s leading-relaxed ">
